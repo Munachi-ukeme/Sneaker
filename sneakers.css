@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.name{
+    display: flex;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.name a{
+    font-family: sans-serif;
+    font-size: 17px;
+    color: gray;
+}
+
+.right{
+    display: flex;
+    gap: 40px;
+    padding-top: 30px;
+    align-items: center;
+}
+hr{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 40px;
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 100px;
+}
+
+.left{
+    margin-top: 40px;
+    display: block;
+    justify-content: flex-end;
+    padding-left: 260px;
+    flex: 1.5;
+}
+
+.first img{
+    border-radius: 15px;
+}
+
+.second{
+    padding-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.second img{
+    border-radius: 15px;
+}
+
+.righttwo{
+    padding-top: 100px;
+    padding-right: 7rem;
+
+}
+
+.sc{
+    font-size: 20px;
+    color: orangered;
+}
+
+.fle{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.p{
+    line-height: 30px;
+    font-size: 20px;
+    color: gray;
+}
+
+.price{
+    display: flex;
+    gap: 40px;
+}
+
+.dis{
+    padding-top: 8px;
+    background-color: rgb(247, 206, 193);
+    color: orangered;
+    width: 60px;
+    padding: 6px;
+    height: 30px;
+}
+
+.sprice{
+    padding-top: 15px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+button{
+    background-color: rgb(202, 61, 9);
+    border-radius: 10px;
+    height: 48px;
+    width: 17rem;
+    border: none;
+    margin-top: 35px;
+    margin-left: 13rem;
+}
+
+.clicks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.clicks a{
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.last{
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.last a{
+    border-bottom: 2px solid;
+}
+.bn :hover{
+   background-color: rgb(113, 42, 17);
+}
