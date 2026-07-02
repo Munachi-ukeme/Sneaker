@@ -142,3 +142,127 @@ button{
 .bn :hover{
    background-color: rgb(113, 42, 17);
 }
+
+@media (max-width: 768px) {
+
+  /* ============ HEADER ============ */
+
+  .head {
+    padding: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .name img {
+    position: fixed;
+    top: 12px;
+    left: 15px;
+    height: 22px;
+    z-index: 1001;
+  }
+
+  .name {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background: #f4eeee;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    gap: 0;
+    height: 70px;
+  }
+
+  .name a {
+    font-size: 11px;
+    color: gray;
+    flex: 1;
+    text-align: center;
+  }
+
+  /* CART + AVATAR — pinned top-right, with background + smaller size */
+  .right {
+    position: fixed;
+    top: 10px;
+    right: 12px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    z-index: 1001;
+    background: #f5f5f5;
+    padding: 6px 10px;
+    border-radius: 20px;
+  }
+
+  .right img {
+    height: 18px !important;
+    width: 18px !important;
+    object-fit: contain;
+  }
+
+  /* ============ BODY REORDER ============ */
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  /* Break .left and .righttwo out of the flex flow so their
+     children become direct, individually-orderable flex items */
+  .left,
+  .righttwo {
+    display: contents;
+  }
+
+  .sc      { order: 1; text-align: center; font-size: 16px; padding-top: 15px; }
+  .fle     { order: 2; text-align: center; }
+  .fle h1  { font-size: 24px; line-height: 32px; }
+  .p       { order: 3; text-align: center; padding: 0 15px; }
+  .p p     { font-size: 15px; line-height: 24px; }
+
+  .first   { order: 4; }
+  .first img {
+  width: 350px;
+  height: 300px;
+  display: block;
+  margin: 10px auto 0 auto; 
+  border-radius: 8px;       
+  margin-top: 20px;
+}
+
+  .second  {
+    order: 5;
+    padding: 12px 15px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  .second img {
+    height: auto;
+    width: 22%;
+    border-radius: 8px;
+  }
+
+  .price   { order: 6; justify-content: center; align-items: center; gap: 15px; padding-top: 20px; }
+  .price h1 { font-size: 28px; }
+  .sprice  { order: 7; text-align: center; padding-top: 8px; }
+  .bn      { order: 8; padding: 0 15px; }
+
+  button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .last    { order: 9; padding: 20px 15px 0; text-align: center; font-size: 13px; }
+}
